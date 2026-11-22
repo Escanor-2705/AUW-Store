@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="YAKO Daniel">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#111111">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="AUW">
+    <link rel="stylesheet" href="AUWstore.css">
+    <title>AUW Store | Streetwear africain à Brazzaville</title>
+</head>
+<body>
+<nav class="navbar">
+    <a href="AUWstore.html" class="logo"><img src="logo-auw.png" alt="AUW : Never Destroy Your Culture"></a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+    <ul class="menu">
+        <li><a href="AUWstore.html">Accueil</a></li>
+        <li><a href="AUWstore.html#boutique">Boutique</a></li>
+        <li><a href="AUWstore.html#paiement">Paiement</a></li>
+        <li><a href="AUWstore.html#cercle">Cercle fondateur</a></li>
+        <li><a href="AUWFAQ.html">FAQ</a></li>
+        <li><a href="AUW_contact.html">Contact</a></li>
+    </ul>
+    <a href="#" class="nav-wa js-wa" data-msg="Salut AUW ! J'ai une question.">WhatsApp</a>
+</nav>
+<section class="hero">
+    <div class="hero-texte">
+        <p class="hero-tag">| NDYC : NEVER DESTROY YOUR CULTURE</p>
+        <h1>Rejoins le cercle fondateur</h1>
+        <p class="hero-sous">Construis le mouvement en devenant un fondateur.</p>
+        <div class="hero-boutons">
+            <a href="#boutique" class="btn-plein">Commander</a>
+            <a href="#paiement" class="btn-contour">Comment payer</a>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="grille">
+        <div class="promo-carte" style="background-image:url('collection.jpg')">
+            <span class="promo-tag">EXCLUSIF</span>
+            <h3>Nouvelle collection</h3>
+            <p>Plus qu'une marque, un mouvement. La créativité et la tendance qui définissent la rue.</p>
+            <a href="#boutique" class="btn-plein">Voir la collection</a>
+        </div>
+        <div class="promo-carte" style="background-image:url('darko.png')">
+            <span class="promo-tag">BIENTÔT</span>
+            <h3>Prochain drop</h3>
+            <p>De nouvelles pièces arrivent très prochainement.</p>
+            <a href="#" class="btn-plein js-wa" data-msg="Salut AUW ! Prévenez-moi pour le prochain drop.">Être prévenu</a>
+        </div>
+    </div>
+</section>
+<section class="section" id="boutique">
+    <h2>Best sellers</h2>
+    <p class="note">Tout est fabriqué sur commande : comptez 2 à 3 jours de production.</p>
+    <div class="grille">
+        <div class="carte">
+            <img src="tshirt-blanc.jpg" alt="T-shirt Blanc AUW">
+            <p>T-shirt Blanc</p>
+            <p class="prix">10 500 FCFA</p>
+            <label for="taille-blanc" class="note">Taille</label>
+            <select id="taille-blanc"><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+            <button class="btn-wa js-commander" data-produit="T-shirt Blanc" data-prix="10 500 FCFA" data-taille="taille-blanc">Commander sur WhatsApp</button>
+        </div>
+        <div class="carte">
+            <img src="tshirt-noir.jpg" alt="T-shirt Noir AUW">
+            <p>T-shirt Noir</p>
+            <p class="prix">10 500 FCFA</p>
+            <label for="taille-noir" class="note">Taille</label>
+            <select id="taille-noir"><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+            <button class="btn-wa js-commander" data-produit="T-shirt Noir" data-prix="10 500 FCFA" data-taille="taille-noir">Commander sur WhatsApp</button>
+        </div>
+        <div class="carte">
+            <img id="img-crop" src="crop-top-noir.jpg" alt="Crop top femme AUW">
+            <p>Crop Top Femme</p>
+            <p class="prix">7 000 FCFA</p>
+            <label for="couleur-crop" class="note">Couleur</label>
+            <select id="couleur-crop"><option value="noir">Noir</option><option value="blanc">Blanc</option><option value="rose">Rose</option></select>
+            <p class="note">Taille unique, tissu stretch</p>
+            <button class="btn-wa js-commander" data-produit="Crop Top Femme (taille unique)" data-prix="7 000 FCFA" data-taille="couleur-crop" data-label="Couleur">Commander sur WhatsApp</button>
+        </div>
+    </div>
+    <p class="note" style="margin-top:15px">Livraison à Brazzaville en plus : 1 000 FCFA (quartiers proches), 1 500 à 2 000 FCFA (quartiers éloignés).</p>
+</section>
+<section class="section paiement" id="paiement">
+    <h2>3 façons de payer</h2>
+    <div class="grille">
+        <div class="mode"><h3>MTN Mobile Money</h3><p>Paiement complet à la commande. La production démarre dès réception.</p></div>
+        <div class="mode"><h3>Airtel Money</h3><p>Même principe : paiement complet à la commande, production lancée dès réception.</p></div>
+        <div class="mode vedette">
+            <h3>NDYC Paiement Advanced</h3>
+            <p>Commandez sans tout payer d'un coup.</p>
+            <ul>
+                <li>Acompte à la commande : 7 500 FCFA (T-shirt) ou 5 000 FCFA (crop top)</li>
+                <li>Production : 2 à 3 jours</li>
+                <li>Solde à la livraison (3 000 FCFA pour un T-shirt, 2 000 FCFA pour un crop top), dans les 3 à 5 jours après l'annonce que votre commande est prête</li>
+            </ul>
+            <p class="note">L'acompte n'est pas remboursable une fois la production lancée.</p>
+        </div>
+    </div>
+</section>
+<section class="section" id="cercle">
+    <h2>Le cercle fondateur</h2>
+    <p>Limité aux 100 premiers membres. Tu entres après ton premier achat.</p>
+    <div class="mode vedette" style="max-width:520px">
+        <ul>
+            <li>Un numéro de membre, de 1 à 100</li>
+            <li>Accès aux drops 24h avant le public</li>
+            <li>Accès au groupe privé</li>
+            <li>Vote sur certaines collections</li>
+            <li>Ton nom dans le brand book AUW</li>
+        </ul>
+        <p class="note">Selon les occasions, des invitations à des shootings et événements, sans date garantie.</p>
+        <a href="#" class="btn-wa js-wa" data-msg="Salut AUW ! J'ai commandé et je veux rejoindre le cercle fondateur.">Rejoindre le cercle</a>
+    </div>
+</section>
+<footer class="footer">
+    <div>
+        <h4>AUW</h4>
+        <p>AfroUrbanWear : streetwear africain, fait sur commande à Brazzaville.</p>
+        <p><strong>NDYC</strong> : Never Destroy Your Culture</p>
+    </div>
+    <div>
+        <h4>AIDE</h4>
+        <a href="AUWFAQ.html">FAQ</a>
+        <a href="AUWstore.html#paiement">Modes de paiement</a>
+        <a href="AUW_contact.html">Contact</a>
+    </div>
+    <div>
+        <h4>CERCLE FONDATEUR</h4>
+        <p>Recevez nos nouveautés en avant-première.</p>
+        <a href="#" class="js-wa" data-msg="Salut AUW ! Je veux rejoindre le cercle fondateur.">Rejoindre sur WhatsApp</a>
+    </div>
+</footer>
+<script src="AUWstore.js"></script>
+</body>
+</html>
