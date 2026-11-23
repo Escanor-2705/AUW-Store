@@ -30,7 +30,7 @@ a{color:inherit}
 }
 
 /* hero */
-.hero{background:#111 url('hero.JPG') center/cover;min-height:460px;display:flex;align-items:center;padding:40px}
+.hero{background:#111 url('hero.jpg') center/cover;min-height:460px;display:flex;align-items:center;padding:40px}
 .hero-texte{max-width:520px;color:#fff}
 .hero-tag{font-weight:bold;color:gold}
 .hero-texte h1{font-size:42px;line-height:1.1;color:#fff}
