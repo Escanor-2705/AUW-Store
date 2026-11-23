@@ -1,6 +1,6 @@
 // Réseau d'abord : les prix et pages sont toujours à jour, le cache sert uniquement hors connexion.
-const CACHE = "auw-v2";
-const FICHIERS = ["AUWstore.html","AUWFAQ.html","AUW_contact.html","AUWstore.css","AUWstore.js","icon-192.png","logo-auw.png"];
+const CACHE = "auw-v3";
+const FICHIERS = ["index.html","AUWFAQ.html","AUW_contact.html","AUWstore.css","AUWstore.js","icon-192.png","logo-auw.png"];
 self.addEventListener("install", e => {
     e.waitUntil(caches.open(CACHE).then(c => c.addAll(FICHIERS)));
     self.skipWaiting();

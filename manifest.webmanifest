@@ -2,7 +2,7 @@
   "name": "AUW Store",
   "short_name": "AUW",
   "description": "AfroUrbanWear : streetwear africain à Brazzaville",
-  "start_url": "AUWstore.html",
+  "start_url": "index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#d3d3d3",
